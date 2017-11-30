@@ -2,16 +2,241 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title</title>
+  <title>Trivia</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <!-- Bootstrap style sheet-->
-  <!-- Bootstrap style sheet-->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
+<body >
+  <div class="jumbotron text-center">
+    <h1>Bird Trivia</h1>
+    <h2 class="timeDisplay"></h2>
+    <button type="button" class="btn btn-primary" id="start">Click to start</button>
+  </div>
+  <div class="container" id="main">
+
+  <!-- Question One -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/canyon-wren.jpg" alt="Cactus Wren"  id="cactusWren" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+                <div class="questxtbox"><b>1. 'Catherpes mexicanus' is a small North American songbird of the family Troglodytidae. It is generally found in arid, rocky cliffs, outcrops, and canyons. Which species is this?</b></div>
+              <form>
+                <input type="radio" name="q1" value="false"> House Finch<br>
+                <input type="radio" name="q1" value="false"> Western Kingbird<br>
+                <input type="radio" name="q1" value="false"> Nuthatch<br>
+                <input type="radio" name="q1" value="true"> Cactus Wren<br>
+              </form>
+              <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Question Two -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/American-Kestrel.jpg" alt="American Kestrel"  id="AmericanKestrel" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>2. 'Falco sparverius' is the smallest and most common falcon in North America. It varies in size from about the weight of a blue jay to a mourning dove. Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q2" value="false"> Merlin<br>
+            <input type="radio" name="q2" value="true"> American Kestrel<br>
+            <input type="radio" name="q2" value="false"> Aplomado Falcon<br>
+            <input type="radio" name="q2" value="false"> Sharp-shinned Hawk<br>
+          </form>
+              <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Three -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/pyrrhuloxia.jpg" alt="Pyrrhuloxia"  id="pyrrhuloxia" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>3. 'Cardinalis sinuatus' Dapper in looks and cheerful in song, this bird is a tough-as-nails songbird of baking hot deserts in the American Southwest and northern Mexico. Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q3" value="false"> Oriole<br>
+            <input type="radio" name="q3" value="false"> Cardinal<br>
+            <input type="radio" name="q3" value="true"> Pyrrhuloxia<br>
+            <input type="radio" name="q3" value="false"> Grosbeak<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Four -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/gila-woodpecker.jpg" alt="Gila Woodpecker"  id="gilaWoodpecker" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>4. 'Melanerpes uropygialis' A conspicuous resident in the deserts of the Southwest and Mexico, it is a characteristic bird of the saguaro cactus forests. Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q4" value="true"> Gila Woodpecker<br>
+            <input type="radio" name="q4" value="false"> Lewis's Woodpecker<br>
+            <input type="radio" name="q4" value="false"> Hairy Woodpecker<br>
+            <input type="radio" name="q4" value="false"> Acorn Woodpecker<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Five -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/raven.jpg" alt="Raven" id="raven" style="border:1px solid
+          black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>5. 'Corvus corax' This bird is among the smartest of all birds, gaining a reputation for solving ever more complicated problems invented by ever more creative scientists. Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q5" value="false"> Crow<br>
+            <input type="radio" name="q5" value="false"> Cowbird<br>
+            <input type="radio" name="q5" value="true"> Raven<br>
+            <input type="radio" name="q5" value="false"> Grackle<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Six -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/house-finch.jpg" alt="house finch"  id="house-finch" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>6. 'Haemorhous mexicanus' They are frequent visitors to bird feeders throughout the year, particularly if stocked with sunflower or nyjer seed, and will congregate at hanging nyjer sock feeders. Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q6" value="false"> Goldfinch<br>
+            <input type="radio" name="q6" value="false"> Towhee<br>
+            <input type="radio" name="q6" value="false"> Barn Sparrow<br>
+            <input type="radio" name="q6" value="true"> House Finch<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Seven -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/roadrunner.jpg" alt="roadrunner"  id="roadrunner" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>7. 'Geococcyx' Because of its quickness, this bird is one of the few animals that preys upon rattlesnakes; it is also the only real predator of tarantula hawk wasps. Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q7" value="true"> Road Runner<br>
+            <input type="radio" name="q7" value="false"> Coyote<br>
+            <input type="radio" name="q7" value="false"> Meep Meep<br>
+            <input type="radio" name="q7" value="false"> Cactus Quail<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Eight -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/red-tailed.jpg" alt="red-tailed"  id="red-tailed" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>8. 'Buteo jamaicensis' This hawk is a bird of prey, one of three species colloquially known in the United States as the "chickenhawk," though it rarely preys on standard-sized chickens. Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q8" value="false"> Chicken Hawk<br>
+            <input type="radio" name="q8" value="true"> Red-tailed Hawk<br>
+            <input type="radio" name="q8" value="false"> Harris Hawk<br>
+            <input type="radio" name="q8" value="false"> Cooper's Hawk<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Nine -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+          <img class="img-fluid thumbnail" src="assets/images/white-crown.jpg" alt="white-crown"  id="white-crown" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>9. 'Zonotrichia leucophrys' This bird appears each winter over much of North America.They have different songs, according to where they live.  Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q9" value="false"> Oriole<br>
+            <input type="radio" name="q9" value="false"> Barn Sparrow<br>
+            <input type="radio" name="q9" value="false"> House Finch<br>
+            <input type="radio" name="q9" value="true"> White-Crown Sparrow<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Question Ten -->
+  <div class="row">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-sm-4">
+           <img class="img-fluid thumbnail" src="assets/images/goldfinch.jpg" alt="goldfinch"  id="goldfinch" style="border:1px solid black;margin:5px;">
+        </div>
+        <div class="col-sm-8">
+            <div class="questxtbox"><b>10. 'Spinus tristis' These are active and acrobatic little birds that cling to weeds and seed socks, and sometimes mill about in large numbers at feeders or on the ground beneath them.  Which species is this?</b></div>
+          <form>
+            <input type="radio" name="q10" value="true"> Goldfinch<br>
+            <input type="radio" name="q10" value="false"> Towhee<br>
+            <input type="radio" name="q10" value="false"> Wharbler<br>
+            <input type="radio" name="q10" value="false"> House finch<br>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="text-center">
+      <h2 class="Results"></h2>
+      <button class="checkAnswers " type="button" class="btn btn-primary">Check Answers</button>
+      <button class="reset" type="button" class="btn btn-primary">Reset</button>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+    <footer class="footer text-center">
+        <div>
+            <h6 >&#169; Copyright 2017 Trish Mederos</h6>
+        </div>
+    </footer>
+    <script src="assets/javascript/app.js"></script>
 
 </body>
 </html>
