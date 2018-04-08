@@ -8,13 +8,12 @@ Check out the app here: https://tmederos.github.io/Giphy-API/
 
 ---
 # Screenshot
-![Screenshot](https://github.com/tmederos/Giphy-API/blob/master/assets/images/screen-shot.jpg)
+![Screenshot](https://github.com/tmederos/TriviaGame/blob/master/assets/images/screen-shot.jpg)
 
 ---
 Technologies used
 * JavaScript - https://www.javascript.com/
 * jQuery - https://jquery.com/
-* GIPHY API - https://developers.giphy.com/
 
 Built With
 * Sublime Text - Text Editor
