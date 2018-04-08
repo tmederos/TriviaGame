@@ -4,7 +4,7 @@ This is a bird themed Trivia game using JavaScript for the logic and jQuery to m
 
 
 ---
-Check out the app here: https://tmederos.github.io/Giphy-API/
+Check out the app here: https://tmederos.github.io/TriviaGame/
 
 ---
 # Screenshot
